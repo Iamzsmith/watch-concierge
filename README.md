@@ -63,6 +63,10 @@ need an extra gem just for the AI call.
 - Handle Gemini's free-tier 429s explicitly — should show something like
   "try again in a moment" instead of the generic parse-error message.
 
+## Requirements
+- Ruby 3.3.5 (matches `.ruby-version` — rbenv/rvm should pick this up automatically; otherwise `rbenv install 3.3.5` first)
+- If `bin/dev` fails to start, try `bin/rails server` instead (bin/dev depends on the `foreman` gem, which should auto-install but may not in a locked-down environment)
+
 ## Setup
 1. `bundle install`
 2. Grab a free Gemini API key at https://aistudio.google.com/apikey (no
